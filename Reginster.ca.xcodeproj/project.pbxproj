@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AFF23751CEB787B009F802D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23741CEB787B009F802D /* AppDelegate.swift */; };
+		5AFF23771CEB787B009F802D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23761CEB787B009F802D /* ViewController.swift */; };
+		5AFF237A1CEB787B009F802D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF23781CEB787B009F802D /* Main.storyboard */; };
+		5AFF237C1CEB787B009F802D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF237B1CEB787B009F802D /* Assets.xcassets */; };
+		5AFF237F1CEB787B009F802D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF237D1CEB787B009F802D /* LaunchScreen.storyboard */; };
+		5AFF238A1CEB787B009F802D /* Reginster_caTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23891CEB787B009F802D /* Reginster_caTests.swift */; };
+		5AFF23951CEB787B009F802D /* Reginster_caUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AFF23861CEB787B009F802D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFF23691CEB787B009F802D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFF23701CEB787B009F802D;
+			remoteInfo = Reginster.ca;
+		};
+		5AFF23911CEB787B009F802D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFF23691CEB787B009F802D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFF23701CEB787B009F802D;
+			remoteInfo = Reginster.ca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5AFF23711CEB787B009F802D /* Reginster.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reginster.ca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23741CEB787B009F802D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AFF23761CEB787B009F802D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AFF23791CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AFF237B1CEB787B009F802D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AFF237E1CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AFF23801CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.caTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23891CEB787B009F802D /* Reginster_caTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caTests.swift; sourceTree = "<group>"; };
+		5AFF238B1CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.caUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caUITests.swift; sourceTree = "<group>"; };
+		5AFF23961CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AFF236E1CEB787B009F802D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF23821CEB787B009F802D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF238D1CEB787B009F802D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AFF23681CEB787B009F802D = {
+			isa = PBXGroup;
+			children = (
+				5AFF23731CEB787B009F802D /* Reginster.ca */,
+				5AFF23881CEB787B009F802D /* Reginster.caTests */,
+				5AFF23931CEB787B009F802D /* Reginster.caUITests */,
+				5AFF23721CEB787B009F802D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AFF23721CEB787B009F802D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF23711CEB787B009F802D /* Reginster.ca.app */,
+				5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */,
+				5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AFF23731CEB787B009F802D /* Reginster.ca */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF23741CEB787B009F802D /* AppDelegate.swift */,
+				5AFF23761CEB787B009F802D /* ViewController.swift */,
+				5AFF23781CEB787B009F802D /* Main.storyboard */,
+				5AFF237B1CEB787B009F802D /* Assets.xcassets */,
+				5AFF237D1CEB787B009F802D /* LaunchScreen.storyboard */,
+				5AFF23801CEB787B009F802D /* Info.plist */,
+			);
+			path = Reginster.ca;
+			sourceTree = "<group>";
+		};
+		5AFF23881CEB787B009F802D /* Reginster.caTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF23891CEB787B009F802D /* Reginster_caTests.swift */,
+				5AFF238B1CEB787B009F802D /* Info.plist */,
+			);
+			path = Reginster.caTests;
+			sourceTree = "<group>";
+		};
+		5AFF23931CEB787B009F802D /* Reginster.caUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */,
+				5AFF23961CEB787B009F802D /* Info.plist */,
+			);
+			path = Reginster.caUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AFF23701CEB787B009F802D /* Reginster.ca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.ca" */;
+			buildPhases = (
+				5AFF236D1CEB787B009F802D /* Sources */,
+				5AFF236E1CEB787B009F802D /* Frameworks */,
+				5AFF236F1CEB787B009F802D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reginster.ca;
+			productName = Reginster.ca;
+			productReference = 5AFF23711CEB787B009F802D /* Reginster.ca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AFF23841CEB787B009F802D /* Reginster.caTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caTests" */;
+			buildPhases = (
+				5AFF23811CEB787B009F802D /* Sources */,
+				5AFF23821CEB787B009F802D /* Frameworks */,
+				5AFF23831CEB787B009F802D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFF23871CEB787B009F802D /* PBXTargetDependency */,
+			);
+			name = Reginster.caTests;
+			productName = Reginster.caTests;
+			productReference = 5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AFF238F1CEB787B009F802D /* Reginster.caUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caUITests" */;
+			buildPhases = (
+				5AFF238C1CEB787B009F802D /* Sources */,
+				5AFF238D1CEB787B009F802D /* Frameworks */,
+				5AFF238E1CEB787B009F802D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFF23921CEB787B009F802D /* PBXTargetDependency */,
+			);
+			name = Reginster.caUITests;
+			productName = Reginster.caUITests;
+			productReference = 5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AFF23691CEB787B009F802D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Register.ca Inc.";
+				TargetAttributes = {
+					5AFF23701CEB787B009F802D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5AFF23841CEB787B009F802D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5AFF23701CEB787B009F802D;
+					};
+					5AFF238F1CEB787B009F802D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5AFF23701CEB787B009F802D;
+					};
+				};
+			};
+			buildConfigurationList = 5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Reginster.ca" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AFF23681CEB787B009F802D;
+			productRefGroup = 5AFF23721CEB787B009F802D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AFF23701CEB787B009F802D /* Reginster.ca */,
+				5AFF23841CEB787B009F802D /* Reginster.caTests */,
+				5AFF238F1CEB787B009F802D /* Reginster.caUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AFF236F1CEB787B009F802D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFF237F1CEB787B009F802D /* LaunchScreen.storyboard in Resources */,
+				5AFF237C1CEB787B009F802D /* Assets.xcassets in Resources */,
+				5AFF237A1CEB787B009F802D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF23831CEB787B009F802D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF238E1CEB787B009F802D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AFF236D1CEB787B009F802D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFF23771CEB787B009F802D /* ViewController.swift in Sources */,
+				5AFF23751CEB787B009F802D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF23811CEB787B009F802D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFF238A1CEB787B009F802D /* Reginster_caTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFF238C1CEB787B009F802D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFF23951CEB787B009F802D /* Reginster_caUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AFF23871CEB787B009F802D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFF23701CEB787B009F802D /* Reginster.ca */;
+			targetProxy = 5AFF23861CEB787B009F802D /* PBXContainerItemProxy */;
+		};
+		5AFF23921CEB787B009F802D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFF23701CEB787B009F802D /* Reginster.ca */;
+			targetProxy = 5AFF23911CEB787B009F802D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AFF23781CEB787B009F802D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFF23791CEB787B009F802D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AFF237D1CEB787B009F802D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFF237E1CEB787B009F802D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AFF23971CEB787B009F802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AFF23981CEB787B009F802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AFF239A1CEB787B009F802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Reginster.ca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AFF239B1CEB787B009F802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Reginster.ca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5AFF239D1CEB787B009F802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Reginster.caTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
+			};
+			name = Debug;
+		};
+		5AFF239E1CEB787B009F802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Reginster.caTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
+			};
+			name = Release;
+		};
+		5AFF23A01CEB787B009F802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Reginster.ca;
+			};
+			name = Debug;
+		};
+		5AFF23A11CEB787B009F802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Reginster.ca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Reginster.ca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFF23971CEB787B009F802D /* Debug */,
+				5AFF23981CEB787B009F802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.ca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFF239A1CEB787B009F802D /* Debug */,
+				5AFF239B1CEB787B009F802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFF239D1CEB787B009F802D /* Debug */,
+				5AFF239E1CEB787B009F802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFF23A01CEB787B009F802D /* Debug */,
+				5AFF23A11CEB787B009F802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AFF23691CEB787B009F802D /* Project object */;
+}
