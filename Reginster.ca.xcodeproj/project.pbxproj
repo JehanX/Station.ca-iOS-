@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3773671CFF746D00B09760 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A3773661CFF746D00B09760 /* Info.plist */; };
+		5AFD0FBF1CEE1F050058D468 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD0FBC1CEE1F050058D468 /* MenuCell.xib */; };
+		5AFD0FC01CEE1F050058D468 /* SubmenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD0FBD1CEE1F050058D468 /* SubmenuCell.xib */; };
+		5AFD0FC61CEE242F0058D468 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD0FC51CEE242F0058D468 /* CustomCell.swift */; };
 		5AFF23751CEB787B009F802D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23741CEB787B009F802D /* AppDelegate.swift */; };
 		5AFF23771CEB787B009F802D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF23761CEB787B009F802D /* ViewController.swift */; };
 		5AFF237A1CEB787B009F802D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF23781CEB787B009F802D /* Main.storyboard */; };
@@ -34,13 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3773661CFF746D00B09760 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD0FBC1CEE1F050058D468 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		5AFD0FBD1CEE1F050058D468 /* SubmenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmenuCell.xib; sourceTree = "<group>"; };
+		5AFD0FC51CEE242F0058D468 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5AFF23711CEB787B009F802D /* Reginster.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reginster.ca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23741CEB787B009F802D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF23761CEB787B009F802D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5AFF23791CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AFF237B1CEB787B009F802D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AFF237E1CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5AFF23801CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.caTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23891CEB787B009F802D /* Reginster_caTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caTests.swift; sourceTree = "<group>"; };
 		5AFF238B1CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +104,15 @@
 		5AFF23731CEB787B009F802D /* Reginster.ca */ = {
 			isa = PBXGroup;
 			children = (
+				5AFD0FBC1CEE1F050058D468 /* MenuCell.xib */,
+				5AFD0FBD1CEE1F050058D468 /* SubmenuCell.xib */,
 				5AFF23741CEB787B009F802D /* AppDelegate.swift */,
 				5AFF23761CEB787B009F802D /* ViewController.swift */,
+				5A3773661CFF746D00B09760 /* Info.plist */,
 				5AFF23781CEB787B009F802D /* Main.storyboard */,
 				5AFF237B1CEB787B009F802D /* Assets.xcassets */,
 				5AFF237D1CEB787B009F802D /* LaunchScreen.storyboard */,
-				5AFF23801CEB787B009F802D /* Info.plist */,
+				5AFD0FC51CEE242F0058D468 /* CustomCell.swift */,
 			);
 			path = Reginster.ca;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					5AFF23701CEB787B009F802D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A4U47CS7J9;
 					};
 					5AFF23841CEB787B009F802D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,7 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFD0FBF1CEE1F050058D468 /* MenuCell.xib in Resources */,
 				5AFF237F1CEB787B009F802D /* LaunchScreen.storyboard in Resources */,
+				5A3773671CFF746D00B09760 /* Info.plist in Resources */,
+				5AFD0FC01CEE1F050058D468 /* SubmenuCell.xib in Resources */,
 				5AFF237C1CEB787B009F802D /* Assets.xcassets in Resources */,
 				5AFF237A1CEB787B009F802D /* Main.storyboard in Resources */,
 			);
@@ -257,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF23771CEB787B009F802D /* ViewController.swift in Sources */,
+				5AFD0FC61CEE242F0058D468 /* CustomCell.swift in Sources */,
 				5AFF23751CEB787B009F802D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Reginster.ca/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Reginster.ca/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +507,7 @@
 				5AFF239B1CEB787B009F802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +516,7 @@
 				5AFF239E1CEB787B009F802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +525,7 @@
 				5AFF23A11CEB787B009F802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
