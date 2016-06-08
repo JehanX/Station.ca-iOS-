@@ -63,11 +63,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var Buttons_Info : NSMutableArray! = [] //Every entries is a dictionary stores the information of buttons
     var internet : Bool = false
     var jsonwrong : Bool = false
+    var total_menu_submenu = 0
+    var Color_List: NSMutableArray! = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        NSURLCache.sharedURLCache().removeAllCachedResponses()
         //Hide all buttons
         button1.hidden = true
         button2.hidden = true
@@ -92,65 +94,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //Hide menu section
         Exp_list.hidden = true
-        
-        //Default text on buttons
-        button1.setTitle("BACK", forState: UIControlState.Normal)
-        button2.setTitle("PHONE", forState: UIControlState.Normal)
-        button3.setTitle("HOME", forState: UIControlState.Normal)
-        button4.setTitle("EMAIL", forState: UIControlState.Normal)
-        button5.setTitle("MENU", forState: UIControlState.Normal)
-        
-        //Default image on buttons
-        button1.setImage(UIImage(named: "back_button"), forState: .Normal)
-        button2.setImage(UIImage(named: "phone_button"), forState: .Normal)
-        button3.setImage(UIImage(named: "home_button"), forState: .Normal)
-        button4.setImage(UIImage(named: "email_button"), forState: .Normal)
-        button5.setImage(UIImage(named: "menu_button"), forState: .Normal)
-
-        
-        //Center image and text on buttons
-        let spacing: CGFloat=6.0
-        
-        let imageSize1: CGSize = button1.imageView!.image!.size
-        button1.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize1.width, -(imageSize1.height + spacing), 0.0)
-        let labelString1 = NSString(string: button1.titleLabel!.text!)
-        let titleSize1 = labelString1.sizeWithAttributes([NSFontAttributeName: button1.titleLabel!.font])
-        button1.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize1.height + spacing), 0.0, 0.0, -titleSize1.width)
-        let edgeOffset1 = abs(titleSize1.height - imageSize1.height) / 2.0;
-        button1.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset1, 0.0, edgeOffset1, 0.0)
-        
-        let imageSize2: CGSize = button2.imageView!.image!.size
-        button2.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize2.width, -(imageSize2.height + spacing), 0.0)
-        let labelString2 = NSString(string: button2.titleLabel!.text!)
-        let titleSize2 = labelString2.sizeWithAttributes([NSFontAttributeName: button2.titleLabel!.font])
-        button2.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize2.height + spacing), 0.0, 0.0, -titleSize2.width)
-        let edgeOffset2 = abs(titleSize2.height - imageSize2.height) / 2.0;
-        button2.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset2, 0.0, edgeOffset2, 0.0)
-        
-        let imageSize3: CGSize = button3.imageView!.image!.size
-        button3.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize3.width, -(imageSize3.height + spacing), 0.0)
-        let labelString3 = NSString(string: button3.titleLabel!.text!)
-        let titleSize3 = labelString3.sizeWithAttributes([NSFontAttributeName: button3.titleLabel!.font])
-        button3.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize3.height + spacing), 0.0, 0.0, -titleSize3.width)
-        let edgeOffset3 = abs(titleSize3.height - imageSize3.height) / 2.0;
-        button3.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset3, 0.0, edgeOffset3, 0.0)
-        
-        let imageSize4: CGSize = button4.imageView!.image!.size
-        button4.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize4.width, -(imageSize4.height + spacing), 0.0)
-        let labelString4 = NSString(string: button4.titleLabel!.text!)
-        let titleSize4 = labelString4.sizeWithAttributes([NSFontAttributeName: button4.titleLabel!.font])
-        button4.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize4.height + spacing), 0.0, 0.0, -titleSize4.width)
-        let edgeOffset4 = abs(titleSize4.height - imageSize4.height) / 2.0;
-        button4.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset4, 0.0, edgeOffset4, 0.0)
-        
-        let imageSize5: CGSize = button5.imageView!.image!.size
-        button5.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize5.width, -(imageSize5.height + spacing), 0.0)
-        let labelString5 = NSString(string: button5.titleLabel!.text!)
-        let titleSize5 = labelString5.sizeWithAttributes([NSFontAttributeName: button5.titleLabel!.font])
-        button5.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize5.height + spacing), 0.0, 0.0, -titleSize5.width)
-        let edgeOffset5 = abs(titleSize5.height - imageSize5.height) / 2.0;
-        button5.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset5, 0.0, edgeOffset5, 0.0)
-        
         
         //Set border and corner radius of buttons
         button1.layer.cornerRadius = 5
@@ -179,8 +122,69 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button4_width.constant = buttonSize
         button5_width.constant = buttonSize
         
-        //Check the Internet
+        //Default text on buttons
+        button1.setTitle("BACK", forState: UIControlState.Normal)
+        button2.setTitle("PHONE", forState: UIControlState.Normal)
+        button3.setTitle("HOME", forState: UIControlState.Normal)
+        button4.setTitle("EMAIL", forState: UIControlState.Normal)
+        button5.setTitle("MENU", forState: UIControlState.Normal)
+        
+        //Default image on buttons
+        button1.setImage(UIImage(named: "back_button"), forState: .Normal)
+        button2.setImage(UIImage(named: "phone_button"), forState: .Normal)
+        button3.setImage(UIImage(named: "home_button"), forState: .Normal)
+        button4.setImage(UIImage(named: "email_button"), forState: .Normal)
+        button5.setImage(UIImage(named: "menu_button"), forState: .Normal)
+        
+        //Center image and text on buttons
+        let spacing: CGFloat=6.0
+        
+        let imageSize1: CGSize = button1.imageView!.image!.size
+        button1.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize1.width, -(imageSize1.height + spacing), 0.0)
+        let labelString1 = NSString(string: button1.currentTitle!)
+        let titleSize1 = labelString1.sizeWithAttributes([NSFontAttributeName: button1.titleLabel!.font])
+        button1.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize1.height + spacing), 0.0, 0.0, -titleSize1.width)
+        let edgeOffset1 = abs(titleSize1.height - imageSize1.height) / 2.0;
+        button1.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset1, 0.0, edgeOffset1, 0.0)
+        
+        let imageSize2: CGSize = button2.imageView!.image!.size
+        button2.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize2.width, -(imageSize2.height + spacing), 0.0)
+        let labelString2 = NSString(string: button2.currentTitle!)
+        let titleSize2 = labelString2.sizeWithAttributes([NSFontAttributeName: button2.titleLabel!.font])
+        button2.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize2.height + spacing), 0.0, 0.0, -titleSize2.width)
+        let edgeOffset2 = abs(titleSize2.height - imageSize2.height) / 2.0;
+        button2.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset2, 0.0, edgeOffset2, 0.0)
+        
+        let imageSize3: CGSize = button3.imageView!.image!.size
+        button3.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize3.width, -(imageSize3.height + spacing), 0.0)
+        let labelString3 = NSString(string: button3.currentTitle!)
+        let titleSize3 = labelString3.sizeWithAttributes([NSFontAttributeName: button3.titleLabel!.font])
+        button3.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize3.height + spacing), 0.0, 0.0, -titleSize3.width)
+        let edgeOffset3 = abs(titleSize3.height - imageSize3.height) / 2.0;
+        button3.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset3, 0.0, edgeOffset3, 0.0)
+        
+        let imageSize4: CGSize = button4.imageView!.image!.size
+        button4.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize4.width, -(imageSize4.height + spacing), 0.0)
+        let labelString4 = NSString(string: button4.currentTitle!)
+        let titleSize4 = labelString4.sizeWithAttributes([NSFontAttributeName: button4.titleLabel!.font])
+        button4.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize4.height + spacing), 0.0, 0.0, -titleSize4.width)
+        let edgeOffset4 = abs(titleSize4.height - imageSize4.height) / 2.0;
+        button4.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset4, 0.0, edgeOffset4, 0.0)
+        
+        let imageSize5: CGSize = button5.imageView!.image!.size
+        button5.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize5.width, -(imageSize5.height + spacing), 0.0)
+        let labelString5 = NSString(string: button5.currentTitle!)
+        let titleSize5 = labelString5.sizeWithAttributes([NSFontAttributeName: button5.titleLabel!.font])
+        button5.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize5.height + spacing), 0.0, 0.0, -titleSize5.width)
+        let edgeOffset5 = abs(titleSize5.height - imageSize5.height) / 2.0;
+        button5.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset5, 0.0, edgeOffset5, 0.0)
+        
+        
+        
         CheckInternet()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
+        //Check the Internet
+        
         if (internet == false) {
             button1.hidden = false
             button2.hidden = false
@@ -192,9 +196,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         //Load and parse Json file
-        loadJSON("http://www.jehanxue.ca/idea/en/index3.json")
+        //loadJSON("http://cloud.training101.asia.php54-3.dfw1-2.websitetestlink.com/emu/index.json")
+        loadJSON("http://www.jehanxue.ca/idea/en/10dollar.json")
     }
+    func rotated() {
+        if (self.internet == false || self.jsonwrong == true) {
+            self.Num_Button = 5
+        }
+        dispatch_async(dispatch_get_main_queue()) {
+            let screenSize: CGRect = UIScreen.mainScreen().bounds
+            let screenWidth = screenSize.width
+            let buttonSize = screenWidth / CGFloat(self.Num_Button)
+            let buttonWidthArray = [self.button1_width,self.button2_width,self.button3_width,self.button4_width,self.button5_width]
+            for i in 0...4 {
+                if i < self.Num_Button {
+                    buttonWidthArray[i].constant = buttonSize
+                }
+                else {
+                    buttonWidthArray[i].constant = 0
+                }
+            }
+            
+        }
     
+
+            if (self.total_menu_submenu>5) {
+                self.TBHeightConstraint.constant = 250
+            }
+            else {
+                self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
+            }
+
+        
+
+    }
     //Check if there is internet connection. If there is internet connect, set internet as false. Otherwise, set as true.
     func CheckInternet() {
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
@@ -239,7 +274,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.Exp_list.tableFooterView = UIView(frame: CGRectZero)
             self.Exp_list.registerNib(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "idCellMenu")
             self.Exp_list.registerNib(UINib(nibName: "SubmenuCell", bundle: nil), forCellReuseIdentifier: "idCellSubmenu")
-            self.loadAddressURL(self.Home_URL)
+            
         }
     }
     
@@ -292,6 +327,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.MenuText.setTitle(secondaryTitle as? String, forState: .Normal)
                 cell.MenuText.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
                 cell.MenuText.tag = indexOfTappedRow
+                if (Color_List.count > 0) {
+                    cell.MenuText.setTitleColor(UIColor(red: Color_List.objectAtIndex(0) as! CGFloat/255.0, green: Color_List.objectAtIndex(1) as! CGFloat/255.0, blue: Color_List.objectAtIndex(2) as! CGFloat/255.0, alpha: 1.0), forState: .Normal)
+                }
+                else {
+                    cell.MenuText.setTitleColor(UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0), forState: .Normal)
+                }
                 //When menu is expanded
                 if (Menu_Info[indexOfTappedRow]["isExpanded"] as! Bool == true && Menu_Info[indexOfTappedRow]["additionalRows"] as! Int != 0) {
                     cell.ExpandImage.image = UIImage(named: "arrowdown.jpg")
@@ -302,7 +343,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
                 //When menu doesn't have submenu
                 else {
-                    cell.ExpandImage.hidden = true
+                    cell.ExpandImage.image = nil
                 }
                 cell.MenuText.addTarget(self, action: #selector(ViewController.Menu_Click(_:)), forControlEvents: .TouchUpInside)
             }
@@ -310,13 +351,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //When current cell is submenu cell
         else {
             cell.SubmenuLabel.text = currentCell["primaryTitle"] as? String
+            if (Color_List.count > 3) {
+                cell.SubmenuLabel.textColor = UIColor(red: Color_List.objectAtIndex(3) as! CGFloat/255.0, green: Color_List.objectAtIndex(4) as! CGFloat/255.0, blue: Color_List.objectAtIndex(5) as! CGFloat/255.0, alpha: 1.0)
+            }
         }
         return cell
     }
     
     //Return the height of cell
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 60
+        return 50
     }
     
     //Handle the click on cell
@@ -334,7 +378,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     else {
                         Menu_Info[i].setValue(false, forKey: "isExpanded")
+                        total_menu_submenu = Menu_Info[indexOfTappedRow]["additionalRows"] as! Int + Num_Menu
+                        
+                        if (total_menu_submenu > 5) {
+                            self.TBHeightConstraint.constant = 250
+                        }
+                        else {
+                            self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
+                        }
+                        
                     }
+                    
+                }
+            }
+            else {
+                total_menu_submenu = Num_Menu
+                if (self.Num_Menu>5) {
+                    self.TBHeightConstraint.constant = 250
+                }
+                else {
+                    self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
                 }
             }
             Menu_Info[indexOfTappedRow].setValue(shouldExpandAndShowSubRows, forKey: "isExpanded")
@@ -359,6 +422,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
         getIndicesOfVisibleRows()
+
         Exp_list.reloadData()
     }
 
@@ -390,7 +454,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Load json file
     func loadJSON(JSONAddress: String) {
-        print("loading")
         let JSONURL = NSURL(string: JSONAddress)!
         let URLSession = NSURLSession.sharedSession()
         let jsonQuery = URLSession.dataTaskWithURL(JSONURL, completionHandler: { data, response, error -> Void in
@@ -399,12 +462,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             do {
-                print("hehe")
                 if let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
                     
-                    print("hehe")
                     if (jsonResult.objectForKey("homeURL") != nil) {
                         self.Home_URL = jsonResult["homeURL"] as! String
+                        self.loadAddressURL(self.Home_URL)
                     }
                     if (jsonResult.objectForKey("contactPhone") != nil) {
                         self.Phone_Number = jsonResult["contactPhone"] as! String
@@ -413,12 +475,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         self.Contact_Email = jsonResult["contactEmail"] as! String
                     }
                     
-                    
+                    if (jsonResult.objectForKey("Color") != nil) {
+                        let Colors: NSArray = jsonResult["Color"] as! NSArray
+                        for color in Colors {
+                            self.Color_List.addObject(color["r"] as! Int)
+                            self.Color_List.addObject(color["g"] as! Int)
+                            self.Color_List.addObject(color["b"] as! Int)
+                        }
+                    }
             
                     //Custimze menu section
                     if (jsonResult.objectForKey("Menu") != nil) {
                         let Menu_List: NSArray = jsonResult["Menu"] as! NSArray
                         self.Num_Menu = Menu_List.count
+                        self.total_menu_submenu = Menu_List.count
                         for menu in Menu_List {
                             //When menu has submenu
                             if(menu["submenu"] as! String=="Yes") {
@@ -446,7 +516,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             }
                         }
                     }
-                    print("hhe")
                     if (jsonResult.objectForKey("Buttons") != nil) {
                         let Button_List: NSArray = jsonResult["Buttons"] as! NSArray
                         //Custimze buttons
@@ -456,7 +525,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 for i in 0...Button_List.count-1 {
                                     let button = Button_List[i]
                                     let button_text = button["button_text"] as! String
-                                    print(button_text)
                                     let button_icon = button["button_icon"] as! String
                                     let button_func = button["button_func"] as! String
                                     let button_url = button["button_url"] as! String
@@ -469,17 +537,56 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                             let newImage = UIGraphicsGetImageFromCurrentImageContext()
                                             UIGraphicsEndImageContext()
                                             UIButtons[i].setTitle(button_text, forState: UIControlState.Normal)
-                                            UIButtons[i].setImage(newImage, forState: UIControlState.Normal)
+                                            UIButtons[i].setImage(newImage.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), forState: UIControlState.Normal)
                                         }
                                     }
                                 }
+                                let spacing: CGFloat=6.0
+                                
+                                let imageSize1: CGSize = self.button1.imageView!.image!.size
+                                self.button1.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize1.width, -(imageSize1.height + spacing), 0.0)
+                                let labelString1 = NSString(string: self.button1.currentTitle!)
+                                let titleSize1 = labelString1.sizeWithAttributes([NSFontAttributeName: self.button1.titleLabel!.font])
+                                self.button1.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize1.height + spacing), 0.0, 0.0, -titleSize1.width)
+                                let edgeOffset1 = abs(titleSize1.height - imageSize1.height) / 2.0;
+                                self.button1.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset1, 0.0, edgeOffset1, 0.0)
+                                
+                                let imageSize2: CGSize = self.button2.imageView!.image!.size
+                                self.button2.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize2.width, -(imageSize2.height + spacing), 0.0)
+                                let labelString2 = NSString(string: self.button2.currentTitle!)
+                                let titleSize2 = labelString2.sizeWithAttributes([NSFontAttributeName: self.button2.titleLabel!.font])
+                                self.button2.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize2.height + spacing), 0.0, 0.0, -titleSize2.width)
+                                let edgeOffset2 = abs(titleSize2.height - imageSize2.height) / 2.0;
+                                self.button2.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset2, 0.0, edgeOffset2, 0.0)
+                                
+                                let imageSize3: CGSize = self.button3.imageView!.image!.size
+                                self.button3.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize3.width, -(imageSize3.height + spacing), 0.0)
+                                let labelString3 = NSString(string: self.button3.currentTitle!)
+                                let titleSize3 = labelString3.sizeWithAttributes([NSFontAttributeName: self.button3.titleLabel!.font])
+                                self.button3.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize3.height + spacing), 0.0, 0.0, -titleSize3.width)
+                                let edgeOffset3 = abs(titleSize3.height - imageSize3.height) / 2.0;
+                                self.button3.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset3, 0.0, edgeOffset3, 0.0)
+                                
+                                let imageSize4: CGSize = self.button4.imageView!.image!.size
+                                self.button4.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize4.width, -(imageSize4.height + spacing), 0.0)
+                                let labelString4 = NSString(string: self.button4.currentTitle!)
+                                let titleSize4 = labelString4.sizeWithAttributes([NSFontAttributeName: self.button4.titleLabel!.font])
+                                self.button4.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize4.height + spacing), 0.0, 0.0, -titleSize4.width)
+                                let edgeOffset4 = abs(titleSize4.height - imageSize4.height) / 2.0;
+                                self.button4.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset4, 0.0, edgeOffset4, 0.0)
+                                
+                                let imageSize5: CGSize = self.button5.imageView!.image!.size
+                                self.button5.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize5.width, -(imageSize5.height + spacing), 0.0)
+                                let labelString5 = NSString(string: self.button5.currentTitle!)
+                                let titleSize5 = labelString5.sizeWithAttributes([NSFontAttributeName: self.button5.titleLabel!.font])
+                                self.button5.imageEdgeInsets = UIEdgeInsetsMake(-(titleSize5.height + spacing), 0.0, 0.0, -titleSize5.width)
+                                let edgeOffset5 = abs(titleSize5.height - imageSize5.height) / 2.0;
+                                self.button5.contentEdgeInsets = UIEdgeInsetsMake(edgeOffset5, 0.0, edgeOffset5, 0.0)
                             }
                         }
                         self.Num_Button = Button_List.count
                     }
-                    
                 }
-                print("hehe2")
                 //Handle menu section height
                 dispatch_async(dispatch_get_main_queue()) {
                     let screenSize: CGRect = UIScreen.mainScreen().bounds
@@ -494,11 +601,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             buttonWidthArray[i].constant = 0
                         }
                     }
-                    if (self.Num_Menu>5) {
-                        self.TBHeightConstraint.constant = 300
+                    if (self.total_menu_submenu>5) {
+                        self.TBHeightConstraint.constant = 250
                     }
                     else {
-                        self.TBHeightConstraint.constant = CGFloat(60) * CGFloat(self.Num_Menu)
+                        self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(self.total_menu_submenu)
                     }
                     self.button1.hidden = false
                     self.button2.hidden = false
@@ -508,16 +615,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.configureTableView()
                     self.loadTableView()
                 }
-                print("hehe3")
                 
             } catch let error as NSError {
                 dispatch_async(dispatch_get_main_queue()) {
+                    let screenSize: CGRect = UIScreen.mainScreen().bounds
+                    let screenWidth = screenSize.width
+                    let buttonSize = screenWidth / 5
+                    self.button1_width.constant = buttonSize
+                    self.button2_width.constant = buttonSize
+                    self.button3_width.constant = buttonSize
+                    self.button4_width.constant = buttonSize
+                    self.button5_width.constant = buttonSize
                     self.button1.hidden = false
                     self.button2.hidden = false
                     self.button3.hidden = false
                     self.button4.hidden = false
                     self.button5.hidden = false
                     self.ErrorMessage.text = "There is something wrong.\n Please try it again later."
+                    self.mask.userInteractionEnabled = false
+                    self.webView.userInteractionEnabled = false
                     self.ErrorMessage.hidden = false
                 }
                 self.jsonwrong = true
@@ -581,6 +697,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             break
         case "Email":
             Exp_list.hidden = true
+            if (Contact_Email == "") {
+                return
+            }
             let url = NSURL(string: "mailto:\(Contact_Email)")
             UIApplication.sharedApplication().openURL(url!)
             break

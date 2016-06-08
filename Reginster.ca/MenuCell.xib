@@ -43,11 +43,17 @@
                             <constraint firstAttribute="width" constant="120" id="v0v-BX-IUW"/>
                         </constraints>
                         <state key="normal" title="Button"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="v0v-BX-IUW"/>
+                            </mask>
+                        </variation>
                     </button>
                 </subviews>
                 <color key="backgroundColor" red="0.95326522440000006" green="0.95326522440000006" blue="0.95326522440000006" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="3CG-Lm-ubq" firstAttribute="top" secondItem="jl1-hJ-VJg" secondAttribute="topMargin" id="3fh-dL-gF6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3CG-Lm-ubq" secondAttribute="trailing" constant="20" id="8IO-2P-Tfq"/>
                     <constraint firstItem="3zw-yK-IYR" firstAttribute="top" secondItem="jl1-hJ-VJg" secondAttribute="topMargin" constant="10" id="9tI-aW-3yX"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3CG-Lm-ubq" secondAttribute="bottom" id="EA8-kL-KZ5"/>
                     <constraint firstItem="3zw-yK-IYR" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" constant="10" id="HbP-pQ-ITa"/>
