@@ -209,6 +209,7 @@
                         <outlet property="ErrorMessage" destination="bbB-mZ-Vr0" id="omr-Eo-vjO"/>
                         <outlet property="Exp_list" destination="VnE-wk-nhx" id="P1L-vh-mkU"/>
                         <outlet property="TBHeightConstraint" destination="FiJ-U8-chW" id="5uL-gs-J0E"/>
+                        <outlet property="TBWidthConstraint" destination="tpA-AQ-dgK" id="4vv-fa-OCv"/>
                         <outlet property="button1" destination="nkR-QU-cmc" id="Gja-76-rdm"/>
                         <outlet property="button1_width" destination="EJ3-mY-epE" id="HnP-iR-vIZ"/>
                         <outlet property="button2" destination="wAq-Gt-FHK" id="CY2-DK-ZOL"/>

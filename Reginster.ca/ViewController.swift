@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Outlet constraints definition
 
 
+    @IBOutlet var TBWidthConstraint: NSLayoutConstraint!
     @IBOutlet var TBHeightConstraint: NSLayoutConstraint!
     @IBOutlet var button1_width: NSLayoutConstraint!
     @IBOutlet var button2_width: NSLayoutConstraint!
@@ -206,6 +207,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         dispatch_async(dispatch_get_main_queue()) {
             let screenSize: CGRect = UIScreen.mainScreen().bounds
             let screenWidth = screenSize.width
+            let screenHeight = screenSize.height
             let buttonSize = screenWidth / CGFloat(self.Num_Button)
             let buttonWidthArray = [self.button1_width,self.button2_width,self.button3_width,self.button4_width,self.button5_width]
             for i in 0...4 {
@@ -216,20 +218,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     buttonWidthArray[i].constant = 0
                 }
             }
+            self.MenuSection_HW()
             
         }
-    
-
-            if (self.total_menu_submenu>5) {
-                self.TBHeightConstraint.constant = 250
-            }
-            else {
-                self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
-            }
-
-        
-
     }
+    
+    //Control the height and width of menu section
+    func MenuSection_HW() {
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let height = min(screenHeight*2/5, CGFloat(50) * CGFloat(total_menu_submenu))
+        let width = screenWidth/2
+        self.TBHeightConstraint.constant = height
+        self.TBWidthConstraint.constant = width
+    }
+    
     //Check if there is internet connection. If there is internet connect, set internet as false. Otherwise, set as true.
     func CheckInternet() {
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
@@ -380,12 +384,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         Menu_Info[i].setValue(false, forKey: "isExpanded")
                         total_menu_submenu = Menu_Info[indexOfTappedRow]["additionalRows"] as! Int + Num_Menu
                         
-                        if (total_menu_submenu > 5) {
-                            self.TBHeightConstraint.constant = 250
-                        }
-                        else {
-                            self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
-                        }
+                        MenuSection_HW()
                         
                     }
                     
@@ -393,12 +392,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             else {
                 total_menu_submenu = Num_Menu
-                if (self.Num_Menu>5) {
-                    self.TBHeightConstraint.constant = 250
-                }
-                else {
-                    self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(total_menu_submenu)
-                }
+                MenuSection_HW()
             }
             Menu_Info[indexOfTappedRow].setValue(shouldExpandAndShowSubRows, forKey: "isExpanded")
             for i in (indexOfTappedRow + 1)...(indexOfTappedRow + (Menu_Info[indexOfTappedRow]["additionalRows"] as! Int)) {
@@ -601,12 +595,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             buttonWidthArray[i].constant = 0
                         }
                     }
-                    if (self.total_menu_submenu>5) {
-                        self.TBHeightConstraint.constant = 250
-                    }
-                    else {
-                        self.TBHeightConstraint.constant = CGFloat(50) * CGFloat(self.total_menu_submenu)
-                    }
+
                     self.button1.hidden = false
                     self.button2.hidden = false
                     self.button3.hidden = false
@@ -728,6 +717,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             Exp_list.hidden = true
             mask.userInteractionEnabled = false
         }
+        MenuSection_HW()
     }
     
     
