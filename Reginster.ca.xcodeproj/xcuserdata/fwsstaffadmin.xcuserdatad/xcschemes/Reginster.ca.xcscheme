@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AFF23841CEB787B009F802D"
-               BuildableName = "Reginster.caTests.xctest"
+               BuildableName = "Reginster.ca.xctest"
                BlueprintName = "Reginster.caTests"
                ReferencedContainer = "container:Reginster.ca.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AFF238F1CEB787B009F802D"
-               BuildableName = "Reginster.caUITests.xctest"
+               BuildableName = "Reginster.ca.xctest"
                BlueprintName = "Reginster.caUITests"
                ReferencedContainer = "container:Reginster.ca.xcodeproj">
             </BuildableReference>

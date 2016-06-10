@@ -48,10 +48,10 @@
 		5AFF23791CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AFF237B1CEB787B009F802D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AFF237E1CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.caTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23851CEB787B009F802D /* Reginster.ca.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.ca.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23891CEB787B009F802D /* Reginster_caTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caTests.swift; sourceTree = "<group>"; };
 		5AFF238B1CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.caUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23901CEB787B009F802D /* Reginster.ca.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.ca.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caUITests.swift; sourceTree = "<group>"; };
 		5AFF23961CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				5AFF23711CEB787B009F802D /* Reginster.ca.app */,
-				5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */,
-				5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */,
+				5AFF23851CEB787B009F802D /* Reginster.ca.xctest */,
+				5AFF23901CEB787B009F802D /* Reginster.ca.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			);
 			name = Reginster.caTests;
 			productName = Reginster.caTests;
-			productReference = 5AFF23851CEB787B009F802D /* Reginster.caTests.xctest */;
+			productReference = 5AFF23851CEB787B009F802D /* Reginster.ca.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		5AFF238F1CEB787B009F802D /* Reginster.caUITests */ = {
@@ -188,7 +188,7 @@
 			);
 			name = Reginster.caUITests;
 			productName = Reginster.caUITests;
-			productReference = 5AFF23901CEB787B009F802D /* Reginster.caUITests.xctest */;
+			productReference = 5AFF23901CEB787B009F802D /* Reginster.ca.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -422,7 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -437,7 +437,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -449,7 +449,7 @@
 				INFOPLIST_FILE = Reginster.caTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
 			};
 			name = Debug;
@@ -461,7 +461,7 @@
 				INFOPLIST_FILE = Reginster.caTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
 			};
 			name = Release;
@@ -472,7 +472,7 @@
 				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				TEST_TARGET_NAME = Reginster.ca;
 			};
 			name = Debug;
@@ -483,7 +483,7 @@
 				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Reginster.ca;
 				TEST_TARGET_NAME = Reginster.ca;
 			};
 			name = Release;

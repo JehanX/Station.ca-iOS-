@@ -50,25 +50,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nkR-QU-cmc">
-                                <rect key="frame" x="20" y="555" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="EJ3-mY-epE" userLabel="Button1 width"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="EJ3-mY-epE"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="button1_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wlC-Tt-uGk"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-Gt-FHK">
                                 <rect key="frame" x="83" y="555" width="46" height="30"/>
                                 <constraints>
@@ -139,6 +120,25 @@
                                     </mask>
                                 </variation>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nkR-QU-cmc">
+                                <rect key="frame" x="20" y="555" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="EJ3-mY-epE" userLabel="Button1 width"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EJ3-mY-epE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="button1_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wlC-Tt-uGk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -154,7 +154,7 @@
                             <constraint firstItem="wAq-Gt-FHK" firstAttribute="top" secondItem="Dt0-b8-gdB" secondAttribute="bottom" constant="5" id="G4Q-u0-YAe"/>
                             <constraint firstItem="rJO-FM-ipk" firstAttribute="leading" secondItem="2aI-I0-icR" secondAttribute="trailing" id="G6N-kD-nt0"/>
                             <constraint firstAttribute="bottomMargin" secondItem="VnE-wk-nhx" secondAttribute="bottom" constant="60" id="GNF-tK-qBQ"/>
-                            <constraint firstItem="nkR-QU-cmc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="KDP-Ej-vM1"/>
+                            <constraint firstItem="nkR-QU-cmc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-17" id="KDP-Ej-vM1"/>
                             <constraint firstItem="VnE-wk-nhx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="NBn-5V-zBT"/>
                             <constraint firstAttribute="bottomMargin" secondItem="nkR-QU-cmc" secondAttribute="bottom" id="P2Y-5y-uc9"/>
                             <constraint firstItem="zdp-w0-hfa" firstAttribute="leading" secondItem="wAq-Gt-FHK" secondAttribute="trailing" id="QLo-zV-hfA"/>
@@ -167,10 +167,11 @@
                             <constraint firstItem="rJO-FM-ipk" firstAttribute="leading" secondItem="2aI-I0-icR" secondAttribute="trailing" id="a0d-ar-IcI"/>
                             <constraint firstItem="zdp-w0-hfa" firstAttribute="top" secondItem="Dt0-b8-gdB" secondAttribute="bottom" constant="5" id="aQ3-PB-QIn"/>
                             <constraint firstItem="rJO-FM-ipk" firstAttribute="leading" secondItem="2aI-I0-icR" secondAttribute="trailing" id="cSh-nG-Qkh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rJO-FM-ipk" secondAttribute="trailing" constant="-15" id="clY-hH-zI5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rJO-FM-ipk" secondAttribute="trailing" constant="-17" id="clY-hH-zI5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="wAq-Gt-FHK" secondAttribute="bottom" id="edx-Us-rQj"/>
                             <constraint firstItem="wAq-Gt-FHK" firstAttribute="width" secondItem="nkR-QU-cmc" secondAttribute="width" id="gd4-EK-Oln"/>
                             <constraint firstItem="wAq-Gt-FHK" firstAttribute="leading" secondItem="nkR-QU-cmc" secondAttribute="trailing" id="hZk-fr-1QW"/>
+                            <constraint firstItem="rJO-FM-ipk" firstAttribute="top" secondItem="VnE-wk-nhx" secondAttribute="bottom" constant="5" id="iuG-ic-Grp"/>
                             <constraint firstItem="Dt0-b8-gdB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="ktQ-fs-wLl"/>
                             <constraint firstItem="VnE-wk-nhx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="350" id="nbM-fI-wgD"/>
                             <constraint firstItem="zdp-w0-hfa" firstAttribute="leading" secondItem="wAq-Gt-FHK" secondAttribute="trailing" id="noW-BW-ULA"/>
@@ -178,7 +179,7 @@
                             <constraint firstItem="VnE-wk-nhx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="200" id="pXe-Vb-N6i"/>
                             <constraint firstItem="wAq-Gt-FHK" firstAttribute="leading" secondItem="nkR-QU-cmc" secondAttribute="trailing" id="prd-xQ-ffk"/>
                             <constraint firstItem="2aI-I0-icR" firstAttribute="top" secondItem="Dt0-b8-gdB" secondAttribute="bottom" constant="5" id="t5o-9F-gVj"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Dt0-b8-gdB" secondAttribute="bottom" constant="65" id="vHw-44-Td5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Dt0-b8-gdB" secondAttribute="bottom" constant="60" id="vHw-44-Td5"/>
                             <constraint firstItem="2aI-I0-icR" firstAttribute="leading" secondItem="zdp-w0-hfa" secondAttribute="trailing" id="vXy-iq-YKE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VnE-wk-nhx" secondAttribute="bottom" constant="60" id="vZg-0T-bVB"/>
                             <constraint firstAttribute="bottomMargin" secondItem="2aI-I0-icR" secondAttribute="bottom" id="vof-lZ-uxo"/>
@@ -189,6 +190,7 @@
                             <mask key="constraints">
                                 <exclude reference="Bt4-ZB-nie"/>
                                 <exclude reference="Etl-yP-F5q"/>
+                                <exclude reference="GNF-tK-qBQ"/>
                                 <exclude reference="NBn-5V-zBT"/>
                                 <exclude reference="Uhx-aA-7uf"/>
                                 <exclude reference="nbM-fI-wgD"/>

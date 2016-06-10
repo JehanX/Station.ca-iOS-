@@ -198,7 +198,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //Load and parse Json file
         //loadJSON("http://cloud.training101.asia.php54-3.dfw1-2.websitetestlink.com/emu/index.json")
-        loadJSON("http://www.jehanxue.ca/idea/en/10dollar.json")
+        loadJSON("http://www.jehanxue.ca/idea/en/idea.json")
     }
     func rotated() {
         if (self.internet == false || self.jsonwrong == true) {
