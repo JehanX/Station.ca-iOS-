@@ -42,16 +42,16 @@
 		5AFD0FBC1CEE1F050058D468 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		5AFD0FBD1CEE1F050058D468 /* SubmenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmenuCell.xib; sourceTree = "<group>"; };
 		5AFD0FC51CEE242F0058D468 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		5AFF23711CEB787B009F802D /* Reginster.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reginster.ca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23711CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statio.ca.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23741CEB787B009F802D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF23761CEB787B009F802D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5AFF23791CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AFF237B1CEB787B009F802D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AFF237E1CEB787B009F802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5AFF23851CEB787B009F802D /* Reginster.ca.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.ca.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23851CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Statio.ca.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23891CEB787B009F802D /* Reginster_caTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caTests.swift; sourceTree = "<group>"; };
 		5AFF238B1CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AFF23901CEB787B009F802D /* Reginster.ca.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reginster.ca.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFF23901CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Statio.ca.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reginster_caUITests.swift; sourceTree = "<group>"; };
 		5AFF23961CEB787B009F802D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +84,9 @@
 		5AFF23681CEB787B009F802D = {
 			isa = PBXGroup;
 			children = (
-				5AFF23731CEB787B009F802D /* Reginster.ca */,
-				5AFF23881CEB787B009F802D /* Reginster.caTests */,
-				5AFF23931CEB787B009F802D /* Reginster.caUITests */,
+				5AFF23731CEB787B009F802D /* Station.ca */,
+				5AFF23881CEB787B009F802D /* Station.caTests */,
+				5AFF23931CEB787B009F802D /* Station.caUITests */,
 				5AFF23721CEB787B009F802D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,14 +94,14 @@
 		5AFF23721CEB787B009F802D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AFF23711CEB787B009F802D /* Reginster.ca.app */,
-				5AFF23851CEB787B009F802D /* Reginster.ca.xctest */,
-				5AFF23901CEB787B009F802D /* Reginster.ca.xctest */,
+				5AFF23711CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.app */,
+				5AFF23851CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */,
+				5AFF23901CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5AFF23731CEB787B009F802D /* Reginster.ca */ = {
+		5AFF23731CEB787B009F802D /* Station.ca */ = {
 			isa = PBXGroup;
 			children = (
 				5AFD0FBC1CEE1F050058D468 /* MenuCell.xib */,
@@ -114,33 +114,36 @@
 				5AFF237D1CEB787B009F802D /* LaunchScreen.storyboard */,
 				5AFD0FC51CEE242F0058D468 /* CustomCell.swift */,
 			);
+			name = Station.ca;
 			path = Reginster.ca;
 			sourceTree = "<group>";
 		};
-		5AFF23881CEB787B009F802D /* Reginster.caTests */ = {
+		5AFF23881CEB787B009F802D /* Station.caTests */ = {
 			isa = PBXGroup;
 			children = (
 				5AFF23891CEB787B009F802D /* Reginster_caTests.swift */,
 				5AFF238B1CEB787B009F802D /* Info.plist */,
 			);
+			name = Station.caTests;
 			path = Reginster.caTests;
 			sourceTree = "<group>";
 		};
-		5AFF23931CEB787B009F802D /* Reginster.caUITests */ = {
+		5AFF23931CEB787B009F802D /* Station.caUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5AFF23941CEB787B009F802D /* Reginster_caUITests.swift */,
 				5AFF23961CEB787B009F802D /* Info.plist */,
 			);
+			name = Station.caUITests;
 			path = Reginster.caUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5AFF23701CEB787B009F802D /* Reginster.ca */ = {
+		5AFF23701CEB787B009F802D /* Station.ca.ca */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.ca" */;
+			buildConfigurationList = 5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.ca" */;
 			buildPhases = (
 				5AFF236D1CEB787B009F802D /* Sources */,
 				5AFF236E1CEB787B009F802D /* Frameworks */,
@@ -150,14 +153,14 @@
 			);
 			dependencies = (
 			);
-			name = Reginster.ca;
+			name = Station.ca.ca;
 			productName = Reginster.ca;
-			productReference = 5AFF23711CEB787B009F802D /* Reginster.ca.app */;
+			productReference = 5AFF23711CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5AFF23841CEB787B009F802D /* Reginster.caTests */ = {
+		5AFF23841CEB787B009F802D /* Station.ca.caTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caTests" */;
+			buildConfigurationList = 5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.caTests" */;
 			buildPhases = (
 				5AFF23811CEB787B009F802D /* Sources */,
 				5AFF23821CEB787B009F802D /* Frameworks */,
@@ -168,14 +171,14 @@
 			dependencies = (
 				5AFF23871CEB787B009F802D /* PBXTargetDependency */,
 			);
-			name = Reginster.caTests;
+			name = Station.ca.caTests;
 			productName = Reginster.caTests;
-			productReference = 5AFF23851CEB787B009F802D /* Reginster.ca.xctest */;
+			productReference = 5AFF23851CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5AFF238F1CEB787B009F802D /* Reginster.caUITests */ = {
+		5AFF238F1CEB787B009F802D /* Station.ca.caUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caUITests" */;
+			buildConfigurationList = 5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.caUITests" */;
 			buildPhases = (
 				5AFF238C1CEB787B009F802D /* Sources */,
 				5AFF238D1CEB787B009F802D /* Frameworks */,
@@ -186,9 +189,9 @@
 			dependencies = (
 				5AFF23921CEB787B009F802D /* PBXTargetDependency */,
 			);
-			name = Reginster.caUITests;
+			name = Station.ca.caUITests;
 			productName = Reginster.caUITests;
-			productReference = 5AFF23901CEB787B009F802D /* Reginster.ca.xctest */;
+			productReference = 5AFF23901CEB787B009F802D /* Statio.ca.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Reginster.ca" */;
+			buildConfigurationList = 5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Station.ca" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AFF23701CEB787B009F802D /* Reginster.ca */,
-				5AFF23841CEB787B009F802D /* Reginster.caTests */,
-				5AFF238F1CEB787B009F802D /* Reginster.caUITests */,
+				5AFF23701CEB787B009F802D /* Station.ca.ca */,
+				5AFF23841CEB787B009F802D /* Station.ca.caTests */,
+				5AFF238F1CEB787B009F802D /* Station.ca.caUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		5AFF23871CEB787B009F802D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5AFF23701CEB787B009F802D /* Reginster.ca */;
+			target = 5AFF23701CEB787B009F802D /* Station.ca.ca */;
 			targetProxy = 5AFF23861CEB787B009F802D /* PBXContainerItemProxy */;
 		};
 		5AFF23921CEB787B009F802D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5AFF23701CEB787B009F802D /* Reginster.ca */;
+			target = 5AFF23701CEB787B009F802D /* Station.ca.ca */;
 			targetProxy = 5AFF23911CEB787B009F802D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,10 +422,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Reginster.ca/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
-				PRODUCT_NAME = Reginster.ca;
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Station-ca";
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -434,10 +437,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Reginster.ca/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-ca";
-				PRODUCT_NAME = Reginster.ca;
+				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Station-ca";
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -449,8 +452,8 @@
 				INFOPLIST_FILE = Reginster.caTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
-				PRODUCT_NAME = Reginster.ca;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statio.ca.temp_caseinsensitive_rename.app/Statio.ca.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -461,8 +464,8 @@
 				INFOPLIST_FILE = Reginster.caTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caTests";
-				PRODUCT_NAME = Reginster.ca;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reginster.ca.app/Reginster.ca";
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statio.ca.temp_caseinsensitive_rename.app/Statio.ca.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -472,7 +475,7 @@
 				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
-				PRODUCT_NAME = Reginster.ca;
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = Reginster.ca;
 			};
 			name = Debug;
@@ -483,7 +486,7 @@
 				INFOPLIST_FILE = Reginster.caUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Register.ca-Inc..Reginster-caUITests";
-				PRODUCT_NAME = Reginster.ca;
+				PRODUCT_NAME = Statio.ca.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = Reginster.ca;
 			};
 			name = Release;
@@ -491,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Reginster.ca" */ = {
+		5AFF236C1CEB787B009F802D /* Build configuration list for PBXProject "Station.ca" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AFF23971CEB787B009F802D /* Debug */,
@@ -500,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.ca" */ = {
+		5AFF23991CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.ca" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AFF239A1CEB787B009F802D /* Debug */,
@@ -509,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caTests" */ = {
+		5AFF239C1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.caTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AFF239D1CEB787B009F802D /* Debug */,
@@ -518,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Reginster.caUITests" */ = {
+		5AFF239F1CEB787B009F802D /* Build configuration list for PBXNativeTarget "Station.ca.caUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AFF23A01CEB787B009F802D /* Debug */,

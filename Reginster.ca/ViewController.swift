@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Reginster.ca
+//  Station.ca
 //
 //  Created by fwsstaff adminsitrator on 2016-05-17.
 //  Copyright © 2016 Register.ca Inc. All rights reserved.
@@ -198,7 +198,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //Load and parse Json file
         //loadJSON("http://cloud.training101.asia.php54-3.dfw1-2.websitetestlink.com/emu/index.json")
-        loadJSON("http://www.jehanxue.ca/idea/en/idea.json")
+        loadJSON("http://www.jehanxue.ca/idea/en/station.json")
     }
     func rotated() {
         if (self.internet == false || self.jsonwrong == true) {

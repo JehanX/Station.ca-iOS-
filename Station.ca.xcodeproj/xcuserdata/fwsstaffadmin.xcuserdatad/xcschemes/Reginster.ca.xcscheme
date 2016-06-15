@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AFF23701CEB787B009F802D"
-               BuildableName = "Reginster.ca.app"
-               BlueprintName = "Reginster.ca"
-               ReferencedContainer = "container:Reginster.ca.xcodeproj">
+               BuildableName = "Statio.ca.temp_caseinsensitive_rename.app"
+               BlueprintName = "Station.ca.ca"
+               ReferencedContainer = "container:Station.ca.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AFF23841CEB787B009F802D"
-               BuildableName = "Reginster.ca.xctest"
-               BlueprintName = "Reginster.caTests"
-               ReferencedContainer = "container:Reginster.ca.xcodeproj">
+               BuildableName = "Statio.ca.temp_caseinsensitive_rename.xctest"
+               BlueprintName = "Station.ca.caTests"
+               ReferencedContainer = "container:Station.ca.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AFF238F1CEB787B009F802D"
-               BuildableName = "Reginster.ca.xctest"
-               BlueprintName = "Reginster.caUITests"
-               ReferencedContainer = "container:Reginster.ca.xcodeproj">
+               BuildableName = "Statio.ca.temp_caseinsensitive_rename.xctest"
+               BlueprintName = "Station.ca.caUITests"
+               ReferencedContainer = "container:Station.ca.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AFF23701CEB787B009F802D"
-            BuildableName = "Reginster.ca.app"
-            BlueprintName = "Reginster.ca"
-            ReferencedContainer = "container:Reginster.ca.xcodeproj">
+            BuildableName = "Statio.ca.temp_caseinsensitive_rename.app"
+            BlueprintName = "Station.ca.ca"
+            ReferencedContainer = "container:Station.ca.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AFF23701CEB787B009F802D"
-            BuildableName = "Reginster.ca.app"
-            BlueprintName = "Reginster.ca"
-            ReferencedContainer = "container:Reginster.ca.xcodeproj">
+            BuildableName = "Statio.ca.temp_caseinsensitive_rename.app"
+            BlueprintName = "Station.ca.ca"
+            ReferencedContainer = "container:Station.ca.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AFF23701CEB787B009F802D"
-            BuildableName = "Reginster.ca.app"
-            BlueprintName = "Reginster.ca"
-            ReferencedContainer = "container:Reginster.ca.xcodeproj">
+            BuildableName = "Statio.ca.temp_caseinsensitive_rename.app"
+            BlueprintName = "Station.ca.ca"
+            ReferencedContainer = "container:Station.ca.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -56,12 +56,12 @@
                     <constraint firstAttribute="trailingMargin" secondItem="3CG-Lm-ubq" secondAttribute="trailing" constant="20" id="8IO-2P-Tfq"/>
                     <constraint firstItem="3zw-yK-IYR" firstAttribute="top" secondItem="jl1-hJ-VJg" secondAttribute="topMargin" constant="10" id="9tI-aW-3yX"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3CG-Lm-ubq" secondAttribute="bottom" id="EA8-kL-KZ5"/>
-                    <constraint firstItem="3zw-yK-IYR" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" constant="10" id="HbP-pQ-ITa"/>
+                    <constraint firstItem="3zw-yK-IYR" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" id="HbP-pQ-ITa"/>
                     <constraint firstItem="3zw-yK-IYR" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" constant="-8" id="UVM-VV-jaI"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3zw-yK-IYR" secondAttribute="bottom" constant="10" id="Xik-KZ-Sej"/>
                     <constraint firstItem="3zw-yK-IYR" firstAttribute="top" secondItem="jl1-hJ-VJg" secondAttribute="topMargin" constant="-8" id="Yax-R7-zeP"/>
                     <constraint firstAttribute="trailingMargin" secondItem="3zw-yK-IYR" secondAttribute="trailing" constant="227" id="bPM-B3-tvN"/>
-                    <constraint firstItem="3CG-Lm-ubq" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" constant="50" id="dDU-uV-Dgr"/>
+                    <constraint firstItem="3CG-Lm-ubq" firstAttribute="leading" secondItem="jl1-hJ-VJg" secondAttribute="leadingMargin" constant="30" id="dDU-uV-Dgr"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3zw-yK-IYR" secondAttribute="bottom" constant="-8" id="kiT-cV-qic"/>
                 </constraints>
                 <variation key="default">
