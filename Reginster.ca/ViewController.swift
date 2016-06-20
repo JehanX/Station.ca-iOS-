@@ -78,8 +78,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button4.hidden = true
         button5.hidden = true
         ErrorMessage.hidden = true
-        //ErrorMessage.borderStyle = UITextBorderStyleNone
         
+        //Share cookies between different servers
+        NSHTTPCookieStorage.sharedHTTPCookieStorage().cookieAcceptPolicy = NSHTTPCookieAcceptPolicy.Always
         //Attach tap gesture recognizer to mask
         let selector : Selector = #selector(ViewController.maskViewTouch(_:))
         let tapGesture = UITapGestureRecognizer(target: self, action: selector)
@@ -196,6 +197,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         
+        
         //Load and parse Json file
         //loadJSON("http://cloud.training101.asia.php54-3.dfw1-2.websitetestlink.com/emu/index.json")
         loadJSON("http://www.jehanxue.ca/idea/en/station.json")
@@ -260,7 +262,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Load target URL
     func loadAddressURL(Target: String) {
         let requestURL = NSURL(string:Target)
-        let request = NSURLRequest(URL:requestURL!)
+        let request = NSMutableURLRequest(URL:requestURL!)
         webView.loadRequest(request)
     }
     
